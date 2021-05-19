@@ -52,7 +52,7 @@ namespace SeleniumBasicProjectConfiguration.Helpers
 
         public static void PrintScreen()
         {
-            string fileNameImage = string.Format("{0:yyyyMMddHHmmss}", DateTime.Now);
+            string fileNameImage = string.Format("{0:yyyy-MM-dd HH-mm}", DateTime.Now);
             Screenshot printScreen = ((ITakesScreenshot)DriverContext.Driver).GetScreenshot();
             printScreen.SaveAsFile(diretorio + fileNameImage + ".jpeg", ScreenshotImageFormat.Jpeg);
         }

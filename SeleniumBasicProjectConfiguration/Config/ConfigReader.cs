@@ -6,7 +6,7 @@ using static SeleniumBasicProjectConfiguration.Hook.TestInitializeHook;
 
 namespace SeleniumBasicProjectConfiguration.Config
 {
-    public class ConfigReader
+    public static class ConfigReader
     {       
         /// <summary>
         /// Configurações parametrizadas do XML(App.config)
